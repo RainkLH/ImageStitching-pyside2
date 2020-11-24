@@ -1,21 +1,15 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-# @FileName  :t3.py
+# @FileName  :stitch_img_main.py
 # @Time      :2020/11/18 11:26:23
 # @Author    :Raink
 
-import os, sys, time
+import sys, time
 from os.path import dirname
-from PySide2.QtGui import QMouseEvent
-from PySide2.QtCore import QObject, Qt
+from PySide2.QtCore import Qt
 from PySide2.QtGui import QImage, QPixmap
 from PySide2.QtWidgets import *
 from stitch_img_alg import ImageStitching
-
-
-class DoubleClicked(QMouseEvent):
-    def __init__(self, func):
-        super().__init__()
 
 
 class MainWindow(QWidget):
